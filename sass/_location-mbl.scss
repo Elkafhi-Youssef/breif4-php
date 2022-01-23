@@ -1,0 +1,18 @@
+@media  screen and (max-width: 375px){
+    .location{
+        h2{
+            width: fit-content;
+            // border: 2px solid red;
+            margin: 20px auto 20px auto;
+            font-size: 24px;
+    
+        }
+        .img_location{
+            margin-top: 50px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }  
+}

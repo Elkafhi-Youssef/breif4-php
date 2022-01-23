@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$primary-font:"Poppins", sans-serif;
+$primary-color:#0061FF;
+$second-color:#D1EBFC;
+$third-color:#214975;
+$white-color:#ffffff;
+$black-color:#000000;
+// flex mixin
+@mixin flex( $direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+  }
+
+@mixin btn ($bg,$width, $height,$br){
+    background-color: $bg;
+    width: $width;
+    height: $height;
+    border-radius: $br !important;
+    border: none;
+    outline: none;
+    color: $primary-white;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+

@@ -1,0 +1,76 @@
+$hawkes-blue : #D1EBFC;
+$primary-black : #000;
+$primary-white : #FFF;
+$dark-blue:#214975;
+$primary-blue:#0061FF;
+$background: $hawkes-blue;
+// Regular font family
+$font-family: 'Poppins', sans-serif;
+.pop{
+  
+   margin-top: 50px;
+   margin-left: 250px;
+   height: fit-content;
+  @include flex(row, center, center, wrap);
+  
+  form{
+    width: 500px;
+    
+    div{
+      @include flex(row,space-around, center, wrap);
+      
+      
+      input,select {
+          width: 500px;
+          height: 40px;
+          border-radius: 10px;
+          border: 2px solid $primary-color;
+          box-sizing: border-box;
+          // padding-left: 15px;
+          
+        }
+        label{
+          color:$black-color;
+          font-weight: bold;
+          
+        }
+        button{
+          //@mixin btn ($bg,$width, $height,$br){
+            @include btn($primary-color,250px, 40px, 10px);
+            margin-top: 20px;
+            
+            
+          }
+        }
+      }
+      
+    }
+  // .showedit{
+  //     display: flex;
+  //     position: fixed;
+  //     top: 0;
+  //     right: 0;
+  //     left: 0;
+  //     bottom: 0;
+  //     background-color: $hawkes-blue;
+  //     z-index: 999;
+    
+  // }
+  @media (max-width: 700px){
+    .pop{
+      margin-left: 30px;
+    form{
+      width: 95%;
+      div{
+      flex-direction: column;
+        label{
+          margin: 10px 0;
+        }
+        input,select,button{
+          width: 90%;
+        }
+      }
+  
+    }
+  }
+  }

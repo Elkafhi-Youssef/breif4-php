@@ -1,0 +1,24 @@
+@media  screen and (max-width: 375px){
+    .header_container{
+        *{
+            font-family: $primary-font;
+        }
+        .logo_navbar{
+
+            .logo{
+                
+            }
+            .nav_container{
+                width: 225px;
+                
+                ul{
+                    margin-left: 35px;
+                    li{ 
+                        margin-right: 0px;  
+                    }
+                }
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+.login_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #D1EBFC;
+  height: 100vh;
+}
+
+.login_container .login-left {
+  width: 50%;
+  height: 100%;
+}
+
+.login_container .login-left img {
+  height: 100%;
+  width: 100%;
+}
+
+.login_container .login-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 50%;
+  height: 100%;
+}
+
+.login_container .login-right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 28px;
+}
+
+.login_container .login-right form select {
+  margin-bottom: 5%;
+  width: 544px;
+  height: 60.68px;
+  border-radius: 10px;
+  border: 2px solid #0061FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.login_container .login-right form input {
+  margin-bottom: 5%;
+  width: 544px;
+  height: 60.68px;
+  border-radius: 10px;
+  border: 2px solid #0061FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.login_container .login-right form input::-webkit-input-placeholder {
+  color: #D1EBFC;
+}
+
+.login_container .login-right form input:-ms-input-placeholder {
+  color: #D1EBFC;
+}
+
+.login_container .login-right form input::-ms-input-placeholder {
+  color: #D1EBFC;
+}
+
+.login_container .login-right form input::placeholder {
+  color: #D1EBFC;
+}
+
+.login_container .login-right form a {
+  color: #0061FF;
+  font-size: 16px;
+  margin-bottom: 3%;
+}
+
+.login_container .login-right button {
+  width: 540px;
+  height: 59.68px;
+  border-radius: 10px;
+  color: #FFF;
+  background-color: #0061FF;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1155px) {
+  .login-left {
+    display: none;
+  }
+  .login-right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-right form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login-right form input, .login-right form button {
+    width: 90%;
+  }
+}
+
+.profile_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #D1EBFC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10%;
+  font-size: 24px;
+  gap: 50px;
+}
+
+.profile_container div form {
+  margin-top: 15%;
+  position: relative;
+}
+
+.profile_container div form table {
+  position: absolute;
+  top: -299px;
+  left: 155px;
+}
+
+.profile_container div form table th {
+  color: #214975;
+}
+
+.profile_container div form table td {
+  border: 1px solid #9e9e9e;
+  background-color: #fff;
+  height: 100px;
+  padding: 10px;
+  color: #9e9e9e;
+  font-weight: 400;
+}
+
+.profile_container div form .send {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 7%;
+  position: relative;
+}
+
+.profile_container div form .send input {
+  margin-bottom: 5%;
+  width: 544px;
+  height: 60.68px;
+  border-radius: 10px;
+  border: 2px solid #0061FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.profile_container div form .send img {
+  width: 27px;
+  width: 27px;
+  position: absolute;
+  top: 15px;
+  right: 152px;
+}
+
+.profile_container div form .send input::-webkit-input-placeholder {
+  color: #D1EBFC;
+}
+
+.profile_container div form .send input:-ms-input-placeholder {
+  color: #D1EBFC;
+}
+
+.profile_container div form .send input::-ms-input-placeholder {
+  color: #D1EBFC;
+}
+
+.profile_container div form .send input::placeholder {
+  color: #D1EBFC;
+}
+
+.profile_container .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.profile_container .media .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.profile_container .media .button button {
+  background-color: #0061FF;
+  width: 275px;
+  height: 60px;
+  border-radius: 10px !important;
+  border: none;
+  outline: none;
+  color: #FFF;
+  margin-top: 20px;
+}
+
+.profile_container .info {
+  color: #214975;
+}
+
+.profile_container .info h1 {
+  font-size: clamp(1rem, 8.333vw, 3.5rem);
+}
+
+.pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pop form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.pop form div input, .pop form div select {
+  width: 544px;
+  height: 60.68px;
+  border-radius: 10px;
+  border: 2px solid #0061FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.pop form div label {
+  color: #214975;
+  font-weight: bold;
+}
+
+.pop form div button {
+  background-color: #0061FF;
+  width: 275px;
+  height: 60px;
+  border-radius: 10px !important;
+  border: none;
+  outline: none;
+  color: #FFF;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .pop {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .pop form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pop form div label {
+    margin: 10px 0;
+  }
+  .pop form div input, .pop form div select, .pop form div button {
+    width: 50%;
+  }
+}
+
+.planing_doc {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: unset 0 -1px 3px #0061FF;
+          box-shadow: unset 0 -1px 3px #0061FF;
+  border: 2px solid red;
+}
+
+.planing_doc .header_plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.planing_doc .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0 10%;
+}
+
+.planing_doc .table .header_profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.planing_doc .table form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: 1px solid #9e9e9e;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.planing_doc .table button {
+  border: none;
+  outline: none;
+  color: #FFF;
+  margin: 10px;
+  background-color: #0061FF;
+  width: 100px;
+  height: 45px;
+  border-radius: 10px !important;
+  border: none;
+  outline: none;
+  color: #FFF;
+}
+
+@media (max-width: 700px) {
+  .planing_doc .table {
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    margin: 9px 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .planing_doc .table .header_profil {
+    display: none;
+  }
+  .planing_doc .table form {
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.pop {
+  display: none;
+  position: relative;
+}
+
+.pop .close {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+}
+/*# sourceMappingURL=main.css.map */

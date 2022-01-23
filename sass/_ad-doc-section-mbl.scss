@@ -1,0 +1,305 @@
+
+@media  screen and (max-width: 950px){
+    .content{
+    margin-left: 0px;
+
+        .head_content{
+            
+            .hamburger_menu{
+                display: block;
+                span{
+                    color: $primary-color;
+                }
+            }
+
+            .search_bar{
+                select{
+                }
+                .search{
+                    input[type="text"] {
+                    }
+                    span{
+                      
+                    }
+                }
+            }
+            .add_doctor{
+                
+                }
+            }
+        }
+        .all_doctors{
+            
+            .doctor{
+                
+             .doctor_info{
+                
+                img{
+                   
+                }
+                .full_name{
+                }
+             }
+             .doctor_operation{
+                
+                .button{
+                    
+                }
+             }
+            }
+            .bar_decs{
+               
+                .doctor_info{
+                    .spe{
+                    }
+                }
+                .doctor_operation{
+                }
+            }
+        }
+        
+}
+@media  screen and (min-width: 950px){
+    .content{
+        margin-left: 250px;
+    
+            .head_content{
+                .hamburger_menu{
+                    display: none;
+                    span{
+                        color: $primary-color;
+                    }
+                }
+    
+                .search_bar{
+                    select{
+                    }
+                    .search{
+                        input[type="text"] {
+                        }
+                        span{
+                          
+                        }
+                    }
+                }
+                .add_doctor{
+                    
+                    }
+                }
+            }
+            .all_doctors{
+                
+                .doctor{
+                    
+                 .doctor_info{
+                    
+                    img{
+                       
+                    }
+                    .full_name{
+                    }
+                 }
+                 .doctor_operation{
+                    
+                    .button{
+                        
+                    }
+                 }
+                }
+                .bar_decs{
+                   
+                    .doctor_info{
+                        .spe{
+                        }
+                    }
+                    .doctor_operation{
+                    }
+                }
+            }
+}
+@media  screen and (max-width: 700px){
+    .content{
+            .head_content{
+                .hamburger_menu{
+                   
+                    span{
+                       
+                    }
+                }
+    
+                .search_bar{
+                    select{
+                    }
+                    .search{
+                        input[type="text"] {
+                        }
+                        span{
+                          
+                        }
+                    }
+                }
+                .add_doctor{
+                    
+                    }
+                }
+                .all_doctors{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .doctor{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 40%;
+                        height: fit-content; 
+                        .doctor_info{
+                            width: 90%;
+                            img{
+                                margin-right: 50px;
+                            }
+                            .full_name{
+                            }
+                        }
+                        .doctor_operation{
+                            margin-top: 30px;
+                            .button{
+                            }
+                         }
+                }
+                .bar_decs{
+                    border: 2px solid red;
+                   display: none;
+                    .doctor_info{
+                        .spe{
+                        }
+                    }
+                    .doctor_operation{
+                    }
+                }
+            }
+        }
+    }
+    @media  screen and (max-width: 550px){
+        .content{
+                .head_content{
+                    // border: 2px solid red;
+                    justify-content: space-between;
+                   
+                    .hamburger_menu{
+                        // margin-right: 50px;
+                        span{  
+                        }
+                    }
+                    .search_bar{
+                        select{
+                        }
+                        .search{
+                            input[type="text"] {
+                            }
+                            span{
+                              
+                            }
+                        }
+                    }
+                    .add_doctor{
+                         margin-top: 10px;
+                        
+                        }
+                    }
+                    .all_doctors{
+                        margin-top: 10px;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .doctor{
+                            margin: 10px 30px ;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            width: 250px;
+                            height: fit-content; 
+                            .doctor_info{
+                                img{
+                                    margin-right: 50px;
+                                }
+                                .full_name{
+                                }
+                            }
+                            .doctor_operation{
+                                margin-top: 30px;
+                                .button{
+                                }
+                             }
+                    }
+                    .bar_decs{
+                        // border: 2px solid red;
+                       display: none;
+                        .doctor_info{
+                            .spe{
+                            }
+                        }
+                        .doctor_operation{
+                        }
+                    }
+                }
+            }
+        }
+        @media  screen and (max-width: 490px){
+            .content{
+                    .head_content{
+                        justify-content: space-between;
+                       
+                        .hamburger_menu{
+                           
+                            span{  
+                            }
+                        }
+                        .search_bar{
+                            height: fit-content;
+                            // margin-bottom: 5px;
+                            select{
+                            }
+                            .search{
+
+                                input[type="text"] {
+                                    width: 150px;
+                                }
+                                span{
+                                }
+                            }
+                        }
+                        .add_doctor{
+                             margin-top: 0px;
+                            
+                            }
+                        }
+                        .all_doctors{
+                        //    margin-top: 100px;
+                            .doctor{
+                               
+                                .doctor_info{
+                                    img{
+                                        
+                                    }
+                                    .full_name{
+                                    }
+                                }
+                                .doctor_operation{
+                                    m
+                                    .button{
+                                    }
+                                 }
+                        }
+                        .bar_decs{
+                           
+                            .doctor_info{
+                                .spe{
+                                }
+                            }
+                            .doctor_operation{
+                            }
+                        }
+                    }
+                }
+            }
+

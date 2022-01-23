@@ -1,0 +1,102 @@
+
+.header_container{
+    .main{
+        margin: 75px auto 0 auto;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        .text_main{
+            width: 550px;
+            h1{
+                letter-spacing: 1.5px;
+                font-weight:  900;
+                text-align: center;
+                max-width: 500px;
+                font-size: 45px;
+            }
+            p{
+                margin-top: 40px;
+                font-size: 12px;
+                width: 90%;
+                margin-bottom: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .button{
+                background-color:$primary-color;
+                border: none;
+                color: white;
+                padding: 10px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 10px;
+               
+                
+            }
+        }
+        .image_main{
+            img{
+                margin-right: 50px;
+                width: 470px;
+                height: auto;
+
+            }
+        }
+    }
+    .statistic{
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $white-color;
+        box-shadow: 0 0 10px 0.3px rgba($black-color,0.1) ;
+        margin-bottom: 20px;
+        justify-content: center;
+        .div{
+            margin: 10px;
+            border-radius: 10px;
+            border-left: 1px solid $third-color;
+            border-right: 1px solid $third-color;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container_info{
+                width: 120px;
+               display: flex; 
+               align-items: center;
+
+               img{
+                   width: 50px;
+                   height: 50px;
+               
+               }
+               .number_user{
+                    justify-content: center;
+                   margin-left: 15px;
+                   .number{
+                       
+                       h2{
+                           font-weight: bold;
+                           margin: 0 0 0 10px;
+                       }
+                       
+                   }
+                   .name_users{
+                       h4{
+                           font-weight: 100;
+                       }
+                   }
+               }
+            }
+        }
+    }
+}

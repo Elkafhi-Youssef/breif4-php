@@ -1,0 +1,45 @@
+.Speciality{
+    width: 96%;
+    // border: 2px solid red;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    *{
+
+        font-family: $primary-font;
+    }
+    h2{
+        width: fit-content;
+        // border: 2px solid red;
+        margin: 10px auto 20px auto;
+        font-size: 35px;
+
+    }
+    .p_title{
+        text-align: center;
+        width: 490px;
+        // border: 2px solid red;
+       margin: 0 auto 100px auto;
+    }
+    .All_Speciality{
+        display: flex;
+        justify-content: space-between;
+        .Speciality_iteam{
+            border-radius: 10px;
+            border: 2px solid $primary-color;
+            width: 280px;
+            .head_Speciality{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+    
+            }
+            .p_spe{
+                width: 90%;
+                margin: 30px auto 70px auto;
+            }
+        }
+
+        
+    }
+}

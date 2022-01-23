@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  outline: none; }
+
+input {
+  outline: none; }
+
+.login_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #D1EBFC;
+  height: 100vh; }
+  .login_container .login-left {
+    width: 50%;
+    height: 100%; }
+    .login_container .login-left img {
+      height: 100%;
+      width: 100%; }
+  .login_container .login-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%;
+    height: 100%; }
+    .login_container .login-right form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      font-size: 28px; }
+      .login_container .login-right form input {
+        margin-bottom: 5%;
+        width: 544px;
+        height: 60.68px;
+        border-radius: 10px;
+        border: 2px solid #0061FF;
+        box-sizing: border-box;
+        padding-left: 15px; }
+      .login_container .login-right form input::placeholder {
+        color: #D1EBFC; }
+      .login_container .login-right form a {
+        color: #0061FF;
+        font-size: 16px;
+        margin-bottom: 3%; }
+    .login_container .login-right button {
+      width: 540px;
+      height: 59.68px;
+      border-radius: 10px;
+      color: #FFF;
+      background-color: #0061FF;
+      border: none;
+      outline: none; }
+
+@media only screen and (max-width: 1155px) {
+  .login-left {
+    display: none; }
+
+  .login-right {
+    width: 100%; } }
+@media only screen and (max-width: 600px) {
+  .login-right form {
+    width: 100%;
+    align-items: center; }
+    .login-right form input, .login-right form button {
+      width: 90%; } }
+.profile_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #D1EBFC;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 10%;
+  font-size: 24px;
+  gap: 50px; }
+  .profile_container div form {
+    margin-top: 15%;
+    position: relative; }
+    .profile_container div form table {
+      position: absolute;
+      top: -299px;
+      left: 155px; }
+      .profile_container div form table th {
+        color: #214975; }
+      .profile_container div form table td {
+        border: 1px solid #9e9e9e;
+        background-color: #fff;
+        height: 100px;
+        padding: 10px;
+        color: #9e9e9e;
+        font-weight: 400; }
+    .profile_container div form .send {
+      box-sizing: border-box;
+      margin: 7%;
+      position: relative; }
+      .profile_container div form .send input {
+        margin-bottom: 5%;
+        width: 544px;
+        height: 60.68px;
+        border-radius: 10px;
+        border: 2px solid #0061FF;
+        box-sizing: border-box;
+        padding-left: 15px; }
+      .profile_container div form .send img {
+        width: 27px;
+        width: 27px;
+        position: absolute;
+        top: 15px;
+        right: 152px; }
+      .profile_container div form .send input::placeholder {
+        color: #D1EBFC; }
+  .profile_container .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .profile_container .media .button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .profile_container .media .button button {
+        background-color: #0061FF;
+        width: 275px;
+        height: 60px;
+        border-radius: 10px !important;
+        border: none;
+        outline: none;
+        color: #FFF;
+        margin-top: 20px; }
+  .profile_container .info {
+    color: #214975; }
+    .profile_container .info h1 {
+      font-size: clamp(1rem, 8.333vw, 3.5rem); }
+
+.pop {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .pop form {
+    width: 100vh; }
+    .pop form div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 5%; }
+      .pop form div input, .pop form div select {
+        width: 544px;
+        height: 60.68px;
+        border-radius: 10px;
+        border: 2px solid #0061FF;
+        box-sizing: border-box;
+        padding-left: 15px; }
+      .pop form div label {
+        color: #214975;
+        font-weight: bold; }
+      .pop form div button {
+        background-color: #0061FF;
+        width: 275px;
+        height: 60px;
+        border-radius: 10px !important;
+        border: none;
+        outline: none;
+        color: #FFF;
+        margin-top: 20px; }
+
+@media (max-width: 700px) {
+  .pop form div {
+    flex-direction: column; }
+    .pop form div label {
+      margin: 10px 0; }
+    .pop form div input, .pop form div select, .pop form div button {
+      width: 50%; } }
+.planing_doc {
+  box-sizing: border-box;
+  height: 50vh; }
+  .planing_doc .header_plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap; }
+  .planing_doc .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: 0 10%; }
+    .planing_doc .table .header_profil {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap; }
+    .planing_doc .table form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      border: 1px solid #9e9e9e;
+      border-radius: 100px;
+      margin-top: 10px; }
+    .planing_doc .table button {
+      border: none;
+      outline: none;
+      color: #FFF;
+      margin: 10px;
+      background-color: #0061FF;
+      width: 100px;
+      height: 45px;
+      border-radius: 10px !important;
+      border: none;
+      outline: none;
+      color: #FFF; }
+
+@media (max-width: 700px) {
+  .planing_doc .table {
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    margin: 9px 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .planing_doc .table .header_profil {
+      display: none; }
+    .planing_doc .table form {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; } }
+.pop {
+  display: none;
+  position: relative; }
+  .pop .close {
+    position: absolute;
+    top: 50px;
+    right: 80px; }
+
+/*# sourceMappingURL=style.css.map */

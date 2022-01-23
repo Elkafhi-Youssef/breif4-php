@@ -1,0 +1,22 @@
+
+// mixins 
+
+// flex mixin
+@mixin flex($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+  }
+
+@mixin btn ($bg,$width, $height,$br){
+    background-color: $bg;
+    width: $width;
+    height: $height;
+    border-radius: $br !important;
+    border: none;
+    outline: none;
+    color: $primary-white;
+
+}
