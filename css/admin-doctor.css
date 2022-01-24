@@ -219,16 +219,6 @@
           align-items: center;
 }
 
-.content .head_content .search_bar select {
-  width: 100px;
-  padding: 10px 15px;
-  height: 45px;
-  border: 1px solid #0061FF;
-  margin-right: 10px;
-  border-radius: 20px;
-  background-color: #ffffff;
-}
-
 .content .head_content .search_bar .search {
   height: 45px;
   border: 1px solid #0061FF;
@@ -256,10 +246,15 @@
   border-radius: 20px;
 }
 
-.content .head_content .search_bar .search span {
+.content .head_content .search_bar .search button {
+  border: none;
+  background-color: transparent;
+  margin-left: -10px;
+}
+
+.content .head_content .search_bar .search button span {
   width: 40px;
   height: auto;
-  margin-right: -10px;
 }
 
 .content .head_content .add_doctor {
@@ -276,7 +271,12 @@
   cursor: pointer;
 }
 
-.content .head_content .add_doctor span {
+.content .head_content .add_doctor a {
+  text-decoration: none;
+  color: #214975;
+}
+
+.content .head_content .add_doctor a span {
   margin: 0 5px;
 }
 

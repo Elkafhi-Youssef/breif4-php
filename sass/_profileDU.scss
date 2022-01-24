@@ -1,0 +1,101 @@
+@import '../sass/scss/base/base';
+@import '../sass/scss/abstracts/mixins';
+@import '../sass/scss/abstracts/variables';
+.profile_container{
+    @include flex(row, center, center, wrap);
+    
+  
+    background-color: $background;
+    margin-left: 250px;
+    margin-top: 45px;
+    // height: 100vh;
+    box-sizing: border-box;
+    padding: 0 10%;
+    font-size: 24px;
+    gap: 50px;
+    div{
+    form{
+      
+      margin-top: 15%;
+      position: relative;
+      table{
+        position: absolute;
+        top: -299px;
+        left: 155px;
+        th{
+          color: $dark-blue;
+        }
+          td{
+            border: 1px solid #9e9e9e;
+            background-color: #fff;
+            height: 100px;
+            padding: 10px;
+            color: #9e9e9e;
+            font-weight: 400;
+      }
+    }
+      .send{
+          box-sizing: border-box;
+          margin: 7%;
+          position: relative;
+          input {
+            margin-bottom: 5%;
+            width: 544px;
+            height: 60.68px;
+            border-radius: 10px;
+            border: 2px solid $primary-blue;
+            box-sizing: border-box;
+            padding-left: 15px;
+            
+    
+          }
+          img{
+            width: 27px;
+            
+            width: 27px;
+            
+            position: absolute;
+            top: 15px;
+            right: 152px;
+          }
+          input::placeholder {
+            color: $hawkes-blue;
+          }
+        }
+      }
+  } 
+    .media{
+  
+      @include flex(column, center, center, nowrap);
+  
+      .button{
+        @include flex(column, center, center, nowrap);
+  
+      button{
+        //@mixin btn ($bg,$width, $height,$br){
+        @include btn($primary-blue,275px, 60px, 10px);
+        margin-top: 20px;
+  
+  
+      }
+  
+      }
+  
+    }
+    .info{
+  
+      color:$dark-blue;
+      h1{
+        font-size: clamp(1rem, 8.333vw, 3.5rem);
+      }
+    }
+  
+  
+  }
+
+  @media  screen and (max-width: 950px){
+    .profile_container{
+        margin-left: 0px;
+    margin-top: 0px;
+    }
+  }

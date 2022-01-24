@@ -3,10 +3,29 @@
 <?php include '../../connect.php'; ?>
 <?php include '../../functions_user.php'; ?>
 <?php
-$data = getDoctors($conn);
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
+    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
+        $name = $_POST['fullname'];
+                 
+        $data = searchDoctor($conn,"%$name%");
+
+        if($data){
+          
+        }else{
+          header('Location:showDoctor.php');
+        }
+
+}else {
+  $data = getDoctors($conn);
+
+}
 
 if(isset($_GET['id'])){
+    
     deleteDoctor($conn, $_GET['id']);
+    header('Location:doctors.php');
 }
 ?>
 <section class="content">
@@ -16,15 +35,21 @@ if(isset($_GET['id'])){
                   <i class="fas fa-bars fa-3x"></i>
               </span></div>
             <div class="search_bar">
-                  
-                  <div class="search">
-                      <input type="text" placeholder="search by name">
-                      <span><i class="fas fa-search"></i></span>
+                  <form action="./doctors.php" method="post">
+
+                      <div class="search">
+                          <input type="text" name="fullname" placeholder="search by name">
+                          <button  type="submit">
+                              <span><i class="fas fa-search fa-2x "></i></span>  
+                          </button>
+
                   </div>
+                  </form>
             </div>
             <div class="add_doctor">
+                <a  href="addDoctor.php">
                 <span><i class="fas fa-plus"></i></span>
-                <span>Add Doctor</span>
+                <span>Add Doctor</span></a>
             </div>
         </div>
         <div class="all_doctors">
@@ -48,12 +73,11 @@ if(isset($_GET['id'])){
                   <h4 class="speciality"><?php echo $doctors['type_Compence'];?></h4>
               </div>
               <div class="doctor_operation">
-                  <a href="#" class="button edit"><span><i class="fas fa-user-edit"></i></span> </a>
+                  <a href="./editDoctor.php?idediDoc=<?=$doctors['id_doctor'];?>" class="button edit"><span><i class="fas fa-user-edit"></i></span> </a>
                   <a href="doctors.php?id=<?=$doctors['id_doctor'];?>" class="button"><span>
-                  
                       <i class="fas fa-trash-alt"></i>
                   </span></a>
-                  <a href="#" class="button"><span><i class="fas fa-eye"></i></span></a>
+                  <a href="showDoctor.php?id=<?=$doctors['id_doctor'];?>" class="button"><span><i class="fas fa-eye"></i></span></a>
               </div>
             </div>
            <?php }?>
@@ -61,6 +85,7 @@ if(isset($_GET['id'])){
             
          </div>
       </section>
+      
      
       <script>
        

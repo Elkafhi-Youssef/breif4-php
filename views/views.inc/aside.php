@@ -6,7 +6,7 @@
     <title>Admin-Patient</title>
     <link href= "../../css/bootstrap/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/admin-patient.css" >
-    <script defer src="/js/hamburger.js" ></script>
+    <script defer src="../../js/hamburger.js" ></script>
     <style>
         
     </style>

@@ -144,7 +144,5 @@ e.addEventListener("click",(event)=>{
 });
     
 });
-            
-
 </script>
 <?php require_once '../views.inc/user.footer.php'?>
