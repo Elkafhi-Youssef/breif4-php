@@ -1,3 +1,6 @@
+<?
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,7 +21,7 @@
                 </div>
                 <div class="info_user">
                     <img src="../../images/img_admin.png" alt="image Patient doctor">
-                    <h6>youssef elafhi</h6>
+                    <h6>youssef</h6>
                 </div>
             </div>
            

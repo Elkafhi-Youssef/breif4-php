@@ -256,6 +256,7 @@
                         }
                         .search_bar{
                             height: fit-content;
+                            margin-right: 30px;
                             // margin-bottom: 5px;
                             select{
                             }
@@ -269,10 +270,9 @@
                             }
                         }
                         .add_doctor{
-                             margin-top: 0px;
-                            
-                            }
-                        }
+                            margin-top: 10px;
+                           margin-left: 30%;
+                           }
                         .all_doctors{
                         //    margin-top: 100px;
                             .doctor{
@@ -303,3 +303,65 @@
                 }
             }
 
+            @media  screen and (max-width: 460px){
+                .content{
+                    .head_content{
+                        justify-content: space-between;
+                       
+                        .hamburger_menu{
+                           
+                            span{  
+                            }
+                        }
+                        .search_bar{
+                            height: fit-content;
+                            margin-right: 30px;
+                            min-width: 246px;
+
+                            // margin-bottom: 5px;
+                            select{
+                            }
+                            .search{
+                                min-width: 250px;
+                                input[type="text"] {
+                                    width: 150px;
+                                }
+                                span{
+                                    margin-left: 50px;
+                                }
+                            }
+                        }
+                        .add_doctor{
+                             margin-top: 10px;
+                            margin-left: 30%;
+                            }
+                        }
+                        .all_doctors{
+                        //    margin-top: 100px;
+                            .doctor{
+                               
+                                .doctor_info{
+                                    img{
+                                        
+                                    }
+                                    .full_name{
+                                    }
+                                }
+                                .doctor_operation{
+                                    
+                                    .button{
+                                    }
+                                 }
+                        }
+                        .bar_decs{
+                           
+                            .doctor_info{
+                                .spe{
+                                }
+                            }
+                            .doctor_operation{
+                            }
+                        }
+                    }
+                }
+            }}

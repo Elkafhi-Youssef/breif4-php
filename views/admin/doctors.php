@@ -3,12 +3,10 @@
 <?php include '../../connect.php'; ?>
 <?php include '../../functions_user.php'; ?>
 <?php
-
+ 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-    
-        $name = $_POST['fullname'];
-                 
+        $name = $_POST['fullname'];      
         $data = searchDoctor($conn,"%$name%");
 
         if($data){

@@ -8,7 +8,8 @@
                     <img src="<../../../../images/img_admin.png" alt="">
                 </div>
                     <ul class="links" id="links">
-                        <li><a href="singin.html">Log Out</a></li>
+                        <li><a href="../../endsession.php">Log Out</a></li>
+                        <?= $_SESSION['user_id']?>
                     </ul>
  
             </div>

@@ -6,7 +6,7 @@
 if(isset($_GET['id'])){
   $data = getDoctor($conn,$_GET['id']);
   }
-  print_r($data);
+  
 ?>
 
 <div class="menu_1 hamburger_menu" >

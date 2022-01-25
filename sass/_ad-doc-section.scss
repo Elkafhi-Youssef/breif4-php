@@ -22,8 +22,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-          
+            min-width: 245px;
             .search{
+            min-width: 245px;
+
                 height: 45px;
                 border: 1px solid $primary-color;
                 display: flex;
@@ -33,7 +35,7 @@
                 input[type="text"] {
                     margin-left: 7px;
                     display: block;
-                    width: 220px;  
+                    width: 240px;  
                     font-size: 18px;
                     outline: none;
                     color:$primary-color;
@@ -92,12 +94,14 @@
             justify-content: space-around;
             align-items: center;
             width: 50%;
+            margin: 0 5px 0 5px;
             img{
                 width: 50px;
                 height: 50px;
             }
             .full_name{
-                margin-left: -40px;
+                margin-left: -27px;
+            }
             }
          }
          .doctor_operation{
@@ -132,4 +136,3 @@
         }
     }
     
-}
