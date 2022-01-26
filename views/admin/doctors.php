@@ -3,7 +3,10 @@
 <?php include '../../connect.php'; ?>
 <?php include '../../functions_user.php'; ?>
 <?php
- 
+
+ if(empty($_SESSION['email']) && empty( $_SESSION['user_id']) ){
+    header("Location:../user/login.php");
+ }
 if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         $name = $_POST['fullname'];      
@@ -12,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
         if($data){
           
         }else{
-          header('Location:showDoctor.php');
+          
         }
 
 }else {

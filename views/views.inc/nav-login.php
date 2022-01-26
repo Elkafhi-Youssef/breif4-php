@@ -19,9 +19,11 @@ session_start();
                 <div class="logo">
                     <img src="../../images/Cabinet_logo.png" alt="cabinet">
                 </div>
-                <div class="info_user">
-                    <img src="../../images/img_admin.png" alt="image Patient doctor">
-                    <h6>youssef</h6>
+                <div class="nav_container">
+                    <ul class="links" id="links">
+                        <li><a href="./login.php">Sign In</a></li>
+                        <li><a href="singup.html">Sign Up</a></li>
+                    </ul>
                 </div>
             </div>
            

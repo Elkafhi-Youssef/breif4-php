@@ -1,4 +1,4 @@
-<?php require_once '../views.inc/user.nav.php';?>
+<?php require_once '../views.inc/nav-login.php';?>
 
 <?php include '../../connect.php'; ?>
 <?php include '../../functions_user.php'; ?>
@@ -33,13 +33,13 @@ global $user_err;
                        
                        $_SESSION['email'] =$data['email'] ;
                        $_SESSION['user_id'] = $dt['id_admin'];
-                       print_r(array($_SESSION));
+                       
                         // die();
                        header('Location:../admin/doctors.php');
                    } else {
                        //password incorrect
-                       $data['email_err'] = 'password or email incorrect';
-                       $data['password_err'] = 'password or email incorrect';
+                       $email_err = 'password or email incorrect';
+                       $password_err = 'password or email incorrect';
                        
                       
 

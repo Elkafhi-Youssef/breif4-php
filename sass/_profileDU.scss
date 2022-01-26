@@ -2,7 +2,7 @@
 @import '../sass/scss/abstracts/mixins';
 @import '../sass/scss/abstracts/variables';
 .profile_container{
-    @include flex(row, center, center, wrap);
+    @include flex(column, center, center, wrap);
     
   
     background-color: $background;

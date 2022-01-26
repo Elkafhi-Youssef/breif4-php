@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 ol,
 ul {
   list-style: none;
