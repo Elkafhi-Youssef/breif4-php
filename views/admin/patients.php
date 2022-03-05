@@ -13,7 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
         if($data){
           
         }else{
-          header('Location:showPatient.php');
+         $data = getPatients($conn);
+          
         }
 }else {
  $data = getPatients($conn);

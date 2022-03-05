@@ -3,14 +3,14 @@
 <?php include '../../connect.php'; ?>
 <?php include '../../functions_user.php'; ?>
 <?php 
-session_start();
+// session_start();
 global $user_err;
  global $email_err;
  global$password_err;
     if (($_SERVER['REQUEST_METHOD'] == 'POST') ){
 
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-    
+    //assciative arrays
         $data = [
             'user' => $_POST['user'],
             'email' => $_POST['email'],

@@ -11,6 +11,7 @@ $data = getDoctor($conn,$_GET['idediDoc']);
  
   if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    
     $data = [
               'fn_doctor' => $_POST['fullname'],
               'email_doctor' => $_POST['gmail'],
@@ -43,7 +44,7 @@ $data = getDoctor($conn,$_GET['idediDoc']);
  </div>
 
 
- <div style="margin-top: 100px;" class="edit pop ">
+ <div " class="edit pop ">
         <form action="./editDoctor.php?idedit=<?=$data['id_doctor']; ?>" method="POST">
           <div>
               <label>fullname :</label>

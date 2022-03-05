@@ -7,14 +7,15 @@
  if(empty($_SESSION['email']) && empty( $_SESSION['user_id']) ){
     header("Location:../user/login.php");
  }
-if ($_SERVER['REQUEST_METHOD'] == 'POST'   ) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST'  && isset($_POST['fullname'])  ) {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         $name = $_POST['fullname'];      
         $data = searchDoctor($conn,"%$name%");
-
+       
         if($data){
           
         }else{
+  $data = getDoctors($conn);
           
         }
 

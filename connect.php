@@ -8,3 +8,4 @@ try {
 } catch (Exception $e) {
     die("Opps something went wrong...");
 }
+

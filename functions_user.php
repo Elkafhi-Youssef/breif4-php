@@ -86,6 +86,7 @@ function searchDoctor($conn,$name){
     $stmt->execute();
     $result = $stmt->get_result();
    
+   
     $doctors = [];
     while($row =$result->fetch_assoc()){
         array_push($doctors,$row);
